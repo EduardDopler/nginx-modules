@@ -63,7 +63,8 @@ def main():
 def get_package_description(package):
     """Get the package information from apt-cache and return the
     description part.
-    If multiple package versions are present, focus on the last one.
+    If multiple package versions are present, focus on the first one
+    which often is the freshest.
     """
     try:
         apt_output = subprocess.check_output(
@@ -80,9 +81,9 @@ def get_package_description(package):
     finally:
         pass
 
-    # if multiple packages found, use only last occurence
-    seperator = 'Package: {package_name}'.format(package_name=package)
-    last_package = apt_output.rpartition(seperator)[2]
+    # if multiple packages found, use only first occurence
+    seperator = 'Supported: '
+    last_package = apt_output.partition(seperator)[0]
     # return Description part
     return last_package.partition('Description')[2]
 

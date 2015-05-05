@@ -1,0 +1,83 @@
+                        | nginx-extras |  nginx-full  |  nginx-core  | nginx-light  |
+MAIL MODULES
+auth http               |      Y       |      Y       |      N       |      N       |
+imap                    |      Y       |      Y       |      Y       |      N       |
+mail core               |      Y       |      Y       |      Y       |      N       |
+pop3                    |      Y       |      Y       |      Y       |      N       |
+proxy                   |      Y       |      Y       |      N       |      N       |
+smtp                    |      Y       |      Y       |      Y       |      N       |
+ssl                     |      Y       |      Y       |      Y       |      N       |
+OPTIONAL HTTP MODULES
+addition                |      Y       |      Y       |      Y       |      N       |
+auth request            |      Y       |      Y       |      N       |      Y       |
+charset                 |      Y       |      Y       |      N       |      Y       |
+debug                   |      Y       |      Y       |      Y       |      Y       |
+embedded perl           |      Y       |      N       |      N       |      N       |
+flv                     |      Y       |      N       |      N       |      N       |
+geoip                   |      Y       |      Y       |      Y       |      N       |
+gunzip                  |      Y       |      Y       |      N       |      N       |
+gzip                    |      Y       |      Y       |      N       |      Y       |
+gzip precompression     |      Y       |      Y       |      Y       |      Y       |
+headers                 |      Y       |      Y       |      N       |      Y       |
+http sub                |      N       |      Y       |      Y       |      N       |
+image filter            |      Y       |      Y       |      Y       |      N       |
+index                   |      Y       |      Y       |      N       |      Y       |
+ipv6                    |      Y       |      Y       |      Y       |      Y       |
+log                     |      Y       |      Y       |      N       |      Y       |
+mp4                     |      Y       |      N       |      N       |      N       |
+random index            |      Y       |      N       |      N       |      N       |
+real ip                 |      Y       |      Y       |      Y       |      Y       |
+secure link             |      Y       |      N       |      N       |      N       |
+spdy                    |      Y       |      Y       |      Y       |      N       |
+ssi                     |      Y       |      Y       |      N       |      N       |
+ssl                     |      Y       |      Y       |      Y       |      Y       |
+stub status             |      Y       |      Y       |      Y       |      Y       |
+substitution            |      Y       |      Y       |      Y       |      N       |
+upstream                |      Y       |      Y       |      N       |      Y       |
+user id                 |      Y       |      Y       |      N       |      N       |
+webdav                  |      Y       |      Y       |      Y       |      N       |
+xslt                    |      Y       |      Y       |      Y       |      N       |
+STANDARD HTTP MODULES
+access                  |      Y       |      Y       |      Y       |      Y       |
+auth basic              |      Y       |      Y       |      Y       |      Y       |
+auto index              |      Y       |      Y       |      Y       |      Y       |
+browser                 |      Y       |      Y       |      Y       |      N       |
+charset                 |      Y       |      Y       |      Y       |      Y       |
+core                    |      Y       |      Y       |      Y       |      Y       |
+empty gif               |      Y       |      Y       |      Y       |      Y       |
+fastcgi                 |      Y       |      Y       |      Y       |      Y       |
+geo                     |      Y       |      Y       |      Y       |      N       |
+gzip                    |      Y       |      Y       |      Y       |      Y       |
+headers                 |      Y       |      Y       |      Y       |      Y       |
+index                   |      Y       |      Y       |      Y       |      Y       |
+limit connections       |      Y       |      Y       |      N       |      N       |
+limit requests          |      Y       |      Y       |      Y       |      N       |
+limit zone              |      Y       |      Y       |      Y       |      N       |
+log                     |      Y       |      Y       |      Y       |      Y       |
+map                     |      Y       |      Y       |      Y       |      Y       |
+memcached               |      Y       |      Y       |      Y       |      N       |
+proxy                   |      Y       |      Y       |      Y       |      Y       |
+referer                 |      Y       |      Y       |      Y       |      N       |
+rewrite                 |      Y       |      Y       |      Y       |      Y       |
+scgi                    |      Y       |      Y       |      Y       |      N       |
+split clients           |      Y       |      Y       |      Y       |      N       |
+ssi                     |      Y       |      Y       |      Y       |      N       |
+upstream                |      Y       |      Y       |      Y       |      Y       |
+user id                 |      Y       |      Y       |      Y       |      N       |
+uwsgi                   |      Y       |      Y       |      Y       |      N       |
+THIRD PARTY MODULES
+auth pam                |      Y       |      Y       |      N       |      N       |
+cache purge             |      Y       |      N       |      N       |      N       |
+chunkin                 |      Y       |      N       |      N       |      N       |
+dav ext                 |      Y       |      Y       |      N       |      N       |
+echo                    |      Y       |      Y       |      N       |      Y       |
+embedded lua            |      Y       |      N       |      N       |      N       |
+fancy index             |      Y       |      N       |      N       |      N       |
+headers more            |      Y       |      N       |      N       |      N       |
+http push               |      Y       |      N       |      N       |      N       |
+http substitution filter|      Y       |      Y       |      N       |      N       |
+http substitutions      |      Y       |      Y       |      N       |      N       |
+httpheadersmore         |      Y       |      N       |      N       |      N       |
+nginx development kit   |      Y       |      N       |      N       |      N       |
+upload progress         |      Y       |      N       |      N       |      N       |
+upstream fair queue     |      Y       |      Y       |      N       |      N       |
